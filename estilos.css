@@ -49,13 +49,13 @@
     transform: translateY(60vh) translateX(190px);
     -webkit-animation-timing-function: ease-out;
     height: 45px;
-    width: 58px;
+    width: 55px;
 }
 15%{
     height: 55px;
     width: 45px;
 }
-29%{
+28%{
     height: 50px;
     width: 50px;
 }
@@ -63,12 +63,12 @@
     transform: translateY(0vh) translateX(320px);
     -webkit-animation-timing-function: ease-in; 
     height: 45px;
-    width: 58px;
+    width: 53px;
 
 }
 32%{
     height: 55px;
-    width: 45px;
+    width: 47px;
 }
 
 44%{
@@ -89,13 +89,13 @@
     transform: translateY(60vh) translateX(420px);
     -webkit-animation-timing-function: ease-out;
    height: 45px;
-    width: 58px;   
+    width: 55px;   
 }
 49%{
     height: 55px;
     width: 45px;
 }
-64%{
+63%{
     height: 50px;
     width: 50px;
 }
@@ -103,21 +103,21 @@
     transform: translateY(00vh) translateX(250px);
     -webkit-animation-timing-function: ease-in;
     height: 45px;
-    width: 55px;
+    width: 53px;
 }
 67%{
     height: 55px;
     width: 45px;
 }
-84%{
+82%{
     height: 50px;
     width: 50px;
 }
-85%{
+83%{
     transform: translateY(60vh) translateX(120px);
     -webkit-animation-timing-function: ease-out;
    height: 45px;
-   width: 58px;
+   width: 55px;
 }
 87%{
     height: 55px;
