@@ -1,164 +1,150 @@
 * {
-  box-sizing: border-box;
+box-sizing: border-box;
 }
+/* Creacion de columnas */
 .text{
-  display: block;
-  margin: 0;
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  font-size: 3vw;
-  color: white;
+display: block;
+margin: 0;
+position: relative;
+z-index: 1;
+width: 100%;
+font-size: 3vw;
+color: white;
 }
 .bloque {
-  min-height: 100vh;
-  text-align: center;
-  color: white;
+min-height: 100vh;
+text-align: center;
+color: white;
 }
 .columnas{
-  position: absolute;
-  width: 20%;
-  min-height: 100vh;
-  overflow: hidden;
-  transition: all 0.8s;
+position: absolute;
+width: 20%;
+min-height: 100vh;
+overflow: hidden;
+transition: all 0.8s;
 }
+/* Asignacion de nombre y caracteristicas las columnas */
 .columnas:nth-child(1) {
-  left: 0vw;
+left: 0vw;
 }
 .columnas:nth-child(2) {
-  left: 20vw;
+left: 20vw;
 }
 .columnas:nth-child(3) {
-  left: 40vw;
+left: 40vw;
 }
 .columnas:nth-child(4) {
-  left: 60vw;
+left: 60vw;
 }
 .columnas:nth-child(5) {
-  left: 80vw;
+left: 80vw;
 }
 .columnas:nth-child(1) .content {
-      background: #244F75;
-      animation-name: columna1;
-      animation-delay: 0.2s;
+    background: #244F75;
+    animation-name: columna1;
+    animation-delay: 0.2s;
 }
 .columnas:nth-child(2) .content {
-      background: #60BFBF;
-      animation-name: columna2;
-      animation-delay: 0.3s;
+    background: #60BFBF;
+    animation-name: columna2;
+    animation-delay: 0.3s;
 }
 .columnas:nth-child(3) .content {
-          background: #8C4B7E;
-          animation-name: columna3;
-          animation-delay: 0.4s;
+    background: #8C4B7E;
+    animation-name: columna3;
+    animation-delay: 0.4s;
 }
 .columnas:nth-child(4) .content {
-          background: #F8BB44;
-          animation-name: columna4;
-          animation-delay: 0.5s;
+    background: #F8BB44;
+    animation-name: columna4;
+    animation-delay: 0.5s;
 }
 .columnas:nth-child(5) .content {
-        background: #F24B4B;
-        animation-name: columna5;
-        animation-delay: 0.6s;
+    background: #F24B4B;
+    animation-name: columna5;
+    animation-delay: 0.6s;
 }
 .columnas .content {
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
+animation-duration: 1s;
+animation-fill-mode: both;
+display: flex;
+align-items: center;
+justify-content: center;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+text-decoration: none;
 }
 .columnas .content:hover:before {
-  transform: skew(0deg) scale(3) translate(0, 0);
-  opacity: 0.1;
+transform: skew(0deg) scale(3) translate(0, 0);
+opacity: 0.1;
 }
 .columnas .content:before {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: white;
-  opacity: 0.08;
-  transform-origin: center center;
-  transform: skew(25deg) scaleY(1) translate(0, 0);
-  transition: all 0.6s; 
-}
-.columnas .strip__inner-text {
-  will-change: transform, opacity;
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  width: 70%;
-  transform: translate(-50%, -50%) scale(0.5);
-  opacity: 0;
-  transition: all 0.5s;
+content: "";
+position: absolute;
+z-index: 1;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: white;
+opacity: 0.08;
+transform-origin: center center;
+transform: skew(25deg) scaleY(1) translate(0, 0);
+transition: all 0.5s; 
 }
 
+/*  Animacion y responsive */
 @media screen and (max-width: 800px) {
-  .columnas {
-    min-height: 100vh;
-  }
+.columnas {
+  min-height: 100vh;
+}
 }
 .columnas--expanded .content:hover:before {
-  transform: skew(-30deg) scale(1) translate(0, 0);
-  opacity: 0.05;
+transform: skew(-30deg) scale(1) translate(0, 0);
+opacity: 0.05;
 }
-.columnas--expanded .text {
-  opacity: 0;
-}
-.columnas--expanded .text {
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
-}
+
 @keyframes columna1 {
-  0% {
-      transform: translate3d(-100%, 0, 0);
-  }
-  100% {
-      transform: translate3d(0, 0, 0);
-  }
+0% {
+    transform: translate3d(-100%, 0, 0);
+}
+100% {
+    transform: translate3d(0, 0, 0);
+}
 }
 @keyframes columna2 {
-  0% {
-      transform: translate3d(0, 100%, 0);
-  }
-  100% {
-      transform: translate3d(0, 0, 0);
-  }
+0% {
+    transform: translate3d(0, 100%, 0);
+}
+100% {
+    transform: translate3d(0, 0, 0);
+}
 }
 @keyframes columna3 {
-  0% {
-        transform: translate3d(0, -100%, 0);
-  }
-  100% {
-        transform: translate3d(0, 0, 0);
-  }
+0% {
+    transform: translate3d(0, -100%, 0);
+}
+100% {
+    transform: translate3d(0, 0, 0);
+}
 }
 @keyframes columna4 {
-  0% {
-        transform: translate3d(0, 100%, 0);
-  }
-  100% {
-        transform: translate3d(0, 0, 0);
-  }
+0% {
+    transform: translate3d(0, 100%, 0);
+}
+100% {
+    transform: translate3d(0, 0, 0);
+}
 }
 @keyframes columna5 {
-  0% {
-        transform: translate3d(100%, 0, 0);
-  }
-  100% {
-        transform: translate3d(0, 0, 0);
-  }
+0% {
+    transform: translate3d(100%, 0, 0);
+}
+100% {
+    transform: translate3d(0, 0, 0);
+}
 }
 
